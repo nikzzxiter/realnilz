@@ -1,0 +1,192 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #FF007F;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd1d1;
+    padding: 50px 0;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Quotes Section */
+#quotes {
+    background-color: #ffe6e6;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h6 {
+    margin: 0;
+    color: #ff00cc;
+}
+
+.quote {
+    margin: 20px 0;
+    font-style: italic;
+    color: #000000;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Slider Section */
+h4 { 
+    margin: 0;
+    color :#6666ff
+}
+#gallery {
+    background-color: #fff0f0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%; /* Menyesuaikan gambar agar sesuai dengan ukuran slider */
+    max-width: 100%;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Cerita Form */
+#submit-cerita {
+    background-color: #;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ff9999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+#ceritaOutput {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff9999;
+}
+
+/* Footer */
+footer {
+    background-color: #FF99FF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .gallery-container img {
+        width: 100px; /* Ukuran gambar di perangkat kecil */
+    }
+}
